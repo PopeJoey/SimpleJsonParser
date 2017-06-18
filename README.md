@@ -54,7 +54,7 @@ b、 模块化，代码设计良好，可重用性高。（5 分）
 3、JSON  
 3.1 BNF  
 
-&ltjson> ::= object | array  
+&lt;json> ::= object | array  
 object ::= "{" "}" | "{" members "}"  
 <members> ::= <pair> | <pair> "," <members>  
 <pair> ::= <string> ":" <value>  
