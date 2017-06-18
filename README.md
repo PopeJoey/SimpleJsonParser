@@ -54,19 +54,19 @@ b、 模块化，代码设计良好，可重用性高。（5 分）
 3、JSON  
 3.1 BNF  
 
-&lt;json> ::= object | array  
-object ::= "{" "}" | "{" members "}"  
-<members> ::= <pair> | <pair> "," <members>  
-<pair> ::= <string> ":" <value>  
-<array> ::= "[" "]" | "[" <elements> "]"  
-<elements> ::= <value> | <value> "," <elements>  
-<value> ::= <string> | <number> | <object> | <array> | "true" | "false" | "null"  
-<number> ::= <integer> | <float> | <scientific>  
+json ::= object | array   
+object ::= "{" "}" | "{" members "}"    
+members ::= pair| pair"," members  
+pair ::= string ":" value  
+array ::= "[" "]" | "[" elements "]"  
+elements::= value | value "," elements  
+value ::= string | number | object | array | "true" | "false" | "null"  
+number ::= integer | float | scientific     
 其中：  
-<string>：字符串，包含转义符以及Unicode  
-<integer>：整数  
-<float>：浮点数  
-<scientific>：科学计数法表示的数  
+string：字符串，包含转义符以及Unicode  
+integer：整数  
+float：浮点数  
+scientific：科学计数法表示的数  
 每个token 之间，可以有任意多个空白符。 
 
 3.2 DFA  
