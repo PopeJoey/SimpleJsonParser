@@ -53,9 +53,9 @@ a、 完整地体现一个解析器的结构，读取源文件->词法分析->�
 b、 模块化，代码设计良好，可重用性高。（5 分）  
 3、JSON  
 3.1 BNF  
-''''
-<json> ::= <object> | <array>  
-<object> ::= "{" "}" | "{" <members> "}"  
+
+&ltjson> ::= object | array  
+object ::= "{" "}" | "{" members "}"  
 <members> ::= <pair> | <pair> "," <members>  
 <pair> ::= <string> ":" <value>  
 <array> ::= "[" "]" | "[" <elements> "]"  
@@ -68,7 +68,7 @@ b、 模块化，代码设计良好，可重用性高。（5 分）
 <float>：浮点数  
 <scientific>：科学计数法表示的数  
 每个token 之间，可以有任意多个空白符。 
-''''
+
 3.2 DFA  
 参考资料：http://json.org  
 4、提交须知  
